@@ -1,0 +1,203 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Igor Agapie
+    tagline: PHP Back-End Developer
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: igoragapie@gmail.com
+    phone:
+    website:
+    linkedin: iagapie
+    github: iagapie
+    gitlab:
+    bitbucket:
+    instagram: mounflow
+    twitter: '@i_agapie'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+
+    languages:
+      - idiom: Romanian
+        level: Native
+
+      - idiom: Russian
+        level: Professional
+
+      - idiom: Italian
+        level: Professional
+      
+      - idiom: English
+        level: Intermediate
+
+    interests:
+      - item: Hiking
+        link:
+
+      - item: Traveling
+        link:
+
+      - item: Coding
+        link:
+
+career-profile:
+    title: Summary
+    summary: |
+      Highly-skilled software development professional bringing more than 8 years in software design, development and integration. Advanced knowledge of PHP7 and C#.
+
+education:
+    - degree: Informatics
+      university: Ca' Foscari University of Venice
+      time: 2010 - 2013
+
+    - degree: International Economics
+      university: Universitatea de Stat din Moldova
+      time: 2004 - 2009
+
+experiences:
+    - role: Magento2 CE Back-End Software Developer
+      time: Feb 2018 - Apr 2019
+      company: DigitalMind Srl, Marcon, Veneto, Italy
+      details: |
+        Development of the following e-commerce platforms such as:
+          - Annamaria Cammilli (https://www.annamariacammilli.com)
+          - Lampick
+          - IMPARES (https://www.impares-shop.it)
+
+    - role: Magento1 Back-End Software Developer
+      time: Feb 2017 - Jan 2018
+      company: DigitalMind Srl, Marcon, Veneto, Italy
+      details: |
+        Integrations on the core part, plugin development and bug fixing on projects:
+          - Giuseppe Zanotti (https://www.giuseppezanotti.com)
+          - Falcotto (https://www.falcotto.com)
+          - Freddy (https://www.freddy.com)
+          - Freddy B2B (https://b2b.freddy.com)
+
+    - role: Android Mobile Developer
+      time: Feb 2016 - Jan 2017
+      company: DigitalMind Srl, Marcon, Veneto, Italy
+      details: |
+        Development of the mobile application for the Bioimis food program with direct customer contact.
+        
+        https://play.google.com/store/apps/details?id=it.bioimis.blue.com
+
+    - role: C# .Net Back-End Software Developer
+      time: Mar 2014 - Nov 2015
+      company: Orwell Group, London, United Kingdom
+      details: |
+        Orwell and its brand ipagoo is a financial services group, active in investment management and banking services. Working on this project I have improved my knowledge in .NET 4.5 and 4.6, WCF Service Applications, Entity Framework 6 and 6.1, SQL Server 2014, SOAP and REST API, Unit Testing (NUnit, Moq, MSTest), IoC (Castle, Ninject). 
+        
+        The main functionalities, where I worked on, were:
+          - open a bank account in different countries and currencies, generating and managing all the bank account's information,
+          - instruction of a new payment performing the AML checks,
+          - routing of the payments from the client bank accoun through the system until to the right connector (SEPA, FP, BACS, CHAPS, SWIFT) and vice versa,
+          - management of the customers details of the payments,
+          - fees management.
+
+    - role: Founder, PHP & Android Software Developer
+      time: Apr 2013 - Mar 2014
+      company: Redbooth Lab, Marcon, Veneto, Italy
+      details: |
+        RedBooth Lab is a software house born in the 2013 from the passion of five friends that in the 2014 was acquired and incapsulated from the Digital Mind Group.
+
+        https://www.rblab.it
+
+    - role: PHP Full Stack Developer
+      time: Sep 2011 - Apr 2013
+      company: Freelance / Contractor / Consultant, Venice Area, Italy
+      details: |
+        Freelancer as PHP Full Stack Developer
+
+# projects:
+#     title: Projects
+#     intro: >
+#       You can list your side projects or open source libraries in this
+#       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+
+#     assignments:
+#       - title: Velocity
+#         link: "#hook"
+#         tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+#       - title: DevStudio
+#         link: "#"
+#         tagline: "A responsive website template designed to help web developers/designers market their services."
+
+#       - title: Tempo
+#         link: "#"
+#         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#       - title: Atom
+#         link: "#"
+#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#       - title: Delta
+#         link: "#"
+#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+
+#     papers:
+#       - title: The Art of Computer Programming
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#       - title: A syntax directed compiler for Algol 60
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: PHP
+        level: 98%
+      
+      - name: C#
+        level: 94%
+      
+      - name: SQL
+        level: 90%
+      
+      - name: Java
+        level: 70%
+      
+      - name: Symfony
+        level: 85%
+      
+      - name: Magento CE 1|2
+        level: 85%
+      
+      - name: Javascript
+        level: 80%
+
+      - name: HTML5 & CSS
+        level: 80%
+
+      - name: Angular
+        level: 50%
+
+      - name: Git
+        level: 95%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
