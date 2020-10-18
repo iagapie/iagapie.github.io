@@ -4,5 +4,67 @@
 
 @charset "utf-8";
 
-@import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
-@import "default"; // main partials
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Piazzolla:wght@100;300&display=swap');
+
+@import "font-awesome";
+
+body {
+  background: #fdfdfd;
+}
+
+.name, .position, a {
+  color: #44494b;
+}
+
+.name, .position, .avatar {
+  margin: 0 0 30px;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 92px;
+}
+
+.position {
+  font-family: 'Piazzolla', serif;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.avatar {
+  vertical-align: middle;
+  max-width: 250px;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-family: 'Piazzolla', serif;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.fa {
+  display: block;
+  font-size: 32px;
+}

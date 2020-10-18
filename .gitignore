@@ -6,3 +6,5 @@ Gemfile.lock
 *.code-workspace
 _site/
 .jekyll-metadata
+.idea/
+.jekyll-cache/
