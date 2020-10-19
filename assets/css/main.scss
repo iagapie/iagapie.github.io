@@ -77,6 +77,10 @@ a {
 @media only screen
   and (min-device-width: 601px)
   and (max-device-width: 700px) {
+  .content {
+    flex-direction: row;
+  }
+
   .name {
     font-size: 46px;
   }
@@ -85,6 +89,10 @@ a {
 @media only screen
   and (min-device-width: 701px)
   and (max-device-width: 1000px) {
+  .content {
+    flex-direction: row;
+  }
+  
   .name {
     font-size: 60px;
   }
