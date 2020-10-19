@@ -30,7 +30,6 @@ body {
 
 .content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -65,9 +64,28 @@ a {
 }
 
 @media only screen
-  and (max-device-height: 640px)
-  and (orientation:landscape) {
+  and (max-device-width: 600px) {
   .content {
-    height: 100%;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 700px) {
+  .name {
+    font-size: 46px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 701px)
+  and (max-device-width: 1000px) {
+  .name {
+    font-size: 60px;
   }
 }
