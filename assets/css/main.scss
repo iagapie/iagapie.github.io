@@ -7,25 +7,23 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Piazzolla:wght@300&display=swap');
+@import "font-awesome/font-awesome";
 
-@import "font-awesome";
+$background: #fdfdfd;
+$text-color: #666a6b;
+$margin: 35px;
+$avatar-width: 200px;
 
-body {
-  background: #fdfdfd;
-}
-
-.name, a {
-  color: #666a6b;
-}
-
-.name, .avatar {
-  margin: 35px;
+html, body {
+  background: $background;
 }
 
 .name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   font-size: 88px;
+  color: $text-color;
+  margin: $margin;
 }
 
 .content {
@@ -36,8 +34,10 @@ body {
 }
 
 .avatar {
+  line-height: 1;
   vertical-align: middle;
-  max-width: 200px;
+  width: $avatar-width;
+  margin: $margin;
   border: 0;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -46,13 +46,14 @@ body {
 .social {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: $margin;
 }
 
 a {
   font-family: 'Piazzolla', serif;
   font-size: 8px;
   font-weight: 300;
+  color: $text-color;
   text-align: center;
   text-decoration: none;
   margin: 20px;
@@ -64,23 +65,17 @@ a {
 }
 
 @media only screen
-  and (max-device-width: 600px) {
-  .content {
-    flex-direction: column;
-  }
-
+  and (max-device-width: 568px)
+  and (orientation: landscape) {
   .name {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 
 @media only screen
-  and (min-device-width: 601px)
-  and (max-device-width: 700px) {
-  .content {
-    flex-direction: row;
-  }
-
+  and (min-device-width: 569px)
+  and (max-device-width: 700px)
+  and (orientation: landscape) {
   .name {
     font-size: 46px;
   }
@@ -88,12 +83,48 @@ a {
 
 @media only screen
   and (min-device-width: 701px)
-  and (max-device-width: 1000px) {
-  .content {
-    flex-direction: row;
-  }
-  
+  and (max-device-width: 1000px)
+  and (orientation: landscape) {
   .name {
     font-size: 60px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 1001px)
+  and (orientation: landscape) {
+  .name {
+    font-size: 88px;
+  }
+}
+
+@media only screen
+  and (max-device-width: 375px)
+  and (orientation: portrait) {
+  .content {
+    flex-direction: column;
+  }
+  .name {
+    font-size: 44px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 376px)
+  and (max-device-width: 600px)
+  and (orientation: portrait) {
+  .content {
+    flex-direction: column;
+  }
+  .name {
+    font-size: 52px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 601px)
+  and (orientation: portrait) {
+  .content {
+    flex-direction: row;
   }
 }
