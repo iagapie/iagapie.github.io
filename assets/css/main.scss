@@ -19,13 +19,13 @@ body {
 }
 
 .name, .avatar {
-  margin: 0 0 35px;
+  margin: 35px;
 }
 
 .name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
-  font-size: 96px;
+  font-size: 88px;
 }
 
 .content {
@@ -38,7 +38,7 @@ body {
 
 .avatar {
   vertical-align: middle;
-  max-width: 250px;
+  max-width: 200px;
   border: 0;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -47,18 +47,27 @@ body {
 .social {
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 
 a {
   font-family: 'Piazzolla', serif;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
-  margin: 25px;
+  margin: 20px;
 }
 
 .fa {
   display: block;
-  font-size: 32px;
+  font-size: 30px;
+}
+
+@media only screen
+  and (max-device-height: 640px)
+  and (orientation:landscape) {
+  .content {
+    height: 100%;
+  }
 }
